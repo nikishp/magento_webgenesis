@@ -1,0 +1,32 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/**
+ * Top menu for store
+ *
+ * @var $block \Magento\Theme\Block\Html\Topmenu
+ */
+
+$columnsLimit = $block->getColumnsLimit() ?: 0;
+$_menuHtml = $block->getHtml('level-top', 'submenu', $columnsLimit)
+?>
+
+<div class="catalog-controll">
+  <div class="page-main">
+    <div class="nav-cust-toggle">
+      <div class="hamburger hamburger--js"><span></span></div>
+      Shop categories
+    </div>
+  </div>
+</div>
+
+<nav class="navigation" data-action="navigation">
+  <ul>
+    <?= /* @noEscape */ $_menuHtml?>
+    <?= $block->getChildHtml() ?>
+  </ul>
+</nav>
+

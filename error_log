@@ -1,0 +1,59 @@
+[17-Mar-2021 14:34:32 UTC] PHP Warning:  "continue" targeting switch is equivalent to "break". Did you mean to use "continue 2"? in /home/pdqhkzah/public_html/magenta/vendor/zendframework/zend-stdlib/src/ArrayObject.php on line 426
+[17-Mar-2021 14:55:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Locale' not found in /home/pdqhkzah/public_html/magenta/vendor/magento/framework/Locale/Bundle/DataBundle.php:64
+Stack trace:
+#0 /home/pdqhkzah/public_html/magenta/vendor/magento/framework/Locale/Bundle/DataBundle.php(28): Magento\Framework\Locale\Bundle\DataBundle->cleanLocale('en_US')
+#1 /home/pdqhkzah/public_html/magenta/vendor/magento/framework/Setup/Lists.php(92): Magento\Framework\Locale\Bundle\DataBundle->get('en_US')
+#2 /home/pdqhkzah/public_html/magenta/vendor/magento/framework/Validator/Locale.php(42): Magento\Framework\Setup\Lists->getLocaleList()
+#3 /home/pdqhkzah/public_html/magenta/vendor/magento/module-backend/Model/Locale/Resolver.php(72): Magento\Framework\Validator\Locale->isValid(NULL)
+#4 /home/pdqhkzah/public_html/magenta/vendor/magento/framework/Locale/Resolver.php(78): Magento\Backend\Model\Locale\Resolver->setLocale(NULL)
+#5 /home/pdqhkzah/public_html/magenta/vendor/magento/module-backend/Model/Locale/Resolver.php(60): Magento\Framework\Locale\Resolver->__construc in /home/pdqhkzah/public_html/magenta/vendor/magento/framework/Locale/Bundle/DataBundle.php on line 64
+[17-Mar-2021 14:56:06 UTC] PHP Fatal error:  Uncaught Error: Class 'Locale' not found in /home/pdqhkzah/public_html/magenta/vendor/magento/framework/Locale/Bundle/DataBundle.php:64
+Stack trace:
+#0 /home/pdqhkzah/public_html/magenta/vendor/magento/framework/Locale/Bundle/DataBundle.php(28): Magento\Framework\Locale\Bundle\DataBundle->cleanLocale('en_US')
+#1 /home/pdqhkzah/public_html/magenta/vendor/magento/framework/Setup/Lists.php(92): Magento\Framework\Locale\Bundle\DataBundle->get('en_US')
+#2 /home/pdqhkzah/public_html/magenta/vendor/magento/framework/Validator/Locale.php(42): Magento\Framework\Setup\Lists->getLocaleList()
+#3 /home/pdqhkzah/public_html/magenta/vendor/magento/module-backend/Model/Locale/Resolver.php(72): Magento\Framework\Validator\Locale->isValid(NULL)
+#4 /home/pdqhkzah/public_html/magenta/vendor/magento/framework/Locale/Resolver.php(78): Magento\Backend\Model\Locale\Resolver->setLocale(NULL)
+#5 /home/pdqhkzah/public_html/magenta/vendor/magento/module-backend/Model/Locale/Resolver.php(60): Magento\Framework\Locale\Resolver->__construc in /home/pdqhkzah/public_html/magenta/vendor/magento/framework/Locale/Bundle/DataBundle.php on line 64
+[17-Mar-2021 14:56:48 UTC] PHP Parse error:  syntax error, unexpected '?', expecting variable (T_VARIABLE) in /home/pdqhkzah/public_html/magenta/generated/code/Magento/Framework/App/Response/Http/Interceptor.php on line 11
+[17-Mar-2021 14:56:49 UTC] PHP Parse error:  syntax error, unexpected '?', expecting variable (T_VARIABLE) in /home/pdqhkzah/public_html/magenta/generated/code/Magento/Framework/App/Response/Http/Interceptor.php on line 11
+[18-Mar-2021 14:36:43 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 528384 bytes) in /home/pdqhkzah/public_html/magenta/vendor/oyejorge/less.php/lib/Less/Output.php on line 27
+[21-Mar-2021 17:30:26 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 528384 bytes) in /home/pdqhkzah/public_html/magenta/setup/src/Magento/Setup/Module/Di/Code/Reader/FileClassScanner.php on line 81
+[21-Mar-2021 17:32:57 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 528384 bytes) in /home/pdqhkzah/public_html/magenta/setup/src/Magento/Setup/Module/Di/Code/Reader/FileClassScanner.php on line 81
+[30-Mar-2021 05:24:21 UTC] PHP Parse error:  syntax error, unexpected '?', expecting variable (T_VARIABLE) in /home/pdqhkzah/public_html/magenta/generated/code/Magento/Framework/App/Http/Context/Interceptor.php on line 11
+[30-Mar-2021 05:24:21 UTC] PHP Parse error:  syntax error, unexpected '?', expecting variable (T_VARIABLE) in /home/pdqhkzah/public_html/magenta/generated/code/Magento/Framework/App/Http/Context/Interceptor.php on line 11
+[30-Mar-2021 05:24:53 UTC] PHP Fatal error:  Uncaught Error: Class 'Locale' not found in /home/pdqhkzah/public_html/magenta/vendor/magento/framework/Locale/Bundle/DataBundle.php:64
+Stack trace:
+#0 /home/pdqhkzah/public_html/magenta/vendor/magento/framework/Locale/Bundle/DataBundle.php(28): Magento\Framework\Locale\Bundle\DataBundle->cleanLocale('en_US')
+#1 /home/pdqhkzah/public_html/magenta/vendor/magento/framework/Setup/Lists.php(92): Magento\Framework\Locale\Bundle\DataBundle->get('en_US')
+#2 /home/pdqhkzah/public_html/magenta/vendor/magento/framework/Validator/Locale.php(42): Magento\Framework\Setup\Lists->getLocaleList()
+#3 /home/pdqhkzah/public_html/magenta/vendor/magento/module-backend/Model/Locale/Resolver.php(72): Magento\Framework\Validator\Locale->isValid(NULL)
+#4 /home/pdqhkzah/public_html/magenta/vendor/magento/framework/Locale/Resolver.php(78): Magento\Backend\Model\Locale\Resolver->setLocale(NULL)
+#5 /home/pdqhkzah/public_html/magenta/vendor/magento/module-backend/Model/Locale/Resolver.php(60): Magento\Framework\Locale\Resolver->__construc in /home/pdqhkzah/public_html/magenta/vendor/magento/framework/Locale/Bundle/DataBundle.php on line 64
+[30-Mar-2021 05:24:55 UTC] PHP Fatal error:  Class 'IntlDateFormatter' not found in /home/pdqhkzah/public_html/magenta/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 111
+[30-Mar-2021 05:36:55 UTC] PHP Parse error:  syntax error, unexpected '?', expecting variable (T_VARIABLE) in /home/pdqhkzah/public_html/magenta/generated/code/Magento/Framework/App/Http/Context/Interceptor.php on line 11
+[30-Mar-2021 05:36:55 UTC] PHP Parse error:  syntax error, unexpected '?', expecting variable (T_VARIABLE) in /home/pdqhkzah/public_html/magenta/generated/code/Magento/Framework/App/Http/Context/Interceptor.php on line 11
+[30-Mar-2021 05:40:05 UTC] PHP Parse error:  syntax error, unexpected '?', expecting variable (T_VARIABLE) in /home/pdqhkzah/public_html/magenta/generated/code/Magento/Framework/App/Config/Value/Interceptor.php on line 11
+[30-Mar-2021 05:40:40 UTC] PHP Parse error:  syntax error, unexpected '?', expecting variable (T_VARIABLE) in /home/pdqhkzah/public_html/magenta/generated/code/Magento/Framework/App/Config/Value/Interceptor.php on line 11
+[30-Mar-2021 05:42:10 UTC] PHP Fatal error:  Uncaught Error: Class 'Locale' not found in /home/pdqhkzah/public_html/magenta/vendor/magento/framework/Locale/Bundle/DataBundle.php:64
+Stack trace:
+#0 /home/pdqhkzah/public_html/magenta/vendor/magento/framework/Locale/Bundle/DataBundle.php(28): Magento\Framework\Locale\Bundle\DataBundle->cleanLocale('en_US')
+#1 /home/pdqhkzah/public_html/magenta/vendor/magento/framework/Setup/Lists.php(92): Magento\Framework\Locale\Bundle\DataBundle->get('en_US')
+#2 /home/pdqhkzah/public_html/magenta/vendor/magento/framework/Validator/Locale.php(42): Magento\Framework\Setup\Lists->getLocaleList()
+#3 /home/pdqhkzah/public_html/magenta/vendor/magento/module-backend/Model/Locale/Resolver.php(72): Magento\Framework\Validator\Locale->isValid(NULL)
+#4 /home/pdqhkzah/public_html/magenta/vendor/magento/framework/Locale/Resolver.php(78): Magento\Backend\Model\Locale\Resolver->setLocale(NULL)
+#5 /home/pdqhkzah/public_html/magenta/vendor/magento/module-backend/Model/Locale/Resolver.php(60): Magento\Framework\Locale\Resolver->__construc in /home/pdqhkzah/public_html/magenta/vendor/magento/framework/Locale/Bundle/DataBundle.php on line 64
+[30-Mar-2021 05:42:17 UTC] PHP Fatal error:  Class 'IntlDateFormatter' not found in /home/pdqhkzah/public_html/magenta/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 111
+[30-Mar-2021 05:42:34 UTC] PHP Warning:  "continue" targeting switch is equivalent to "break". Did you mean to use "continue 2"? in /home/pdqhkzah/public_html/magenta/vendor/zendframework/zend-stdlib/src/ArrayObject.php on line 426
+[30-Mar-2021 05:42:38 UTC] PHP Warning:  "continue" targeting switch is equivalent to "break". Did you mean to use "continue 2"? in /home/pdqhkzah/public_html/magenta/vendor/zendframework/zend-stdlib/src/ArrayObject.php on line 426
+[30-Mar-2021 05:42:38 UTC] PHP Warning:  "continue" targeting switch is equivalent to "break". Did you mean to use "continue 2"? in /home/pdqhkzah/public_html/magenta/vendor/zendframework/zend-stdlib/src/ArrayObject.php on line 426
+[30-Mar-2021 05:42:41 UTC] PHP Warning:  "continue" targeting switch is equivalent to "break". Did you mean to use "continue 2"? in /home/pdqhkzah/public_html/magenta/vendor/zendframework/zend-stdlib/src/ArrayObject.php on line 426
+[30-Mar-2021 05:42:42 UTC] PHP Warning:  "continue" targeting switch is equivalent to "break". Did you mean to use "continue 2"? in /home/pdqhkzah/public_html/magenta/vendor/zendframework/zend-stdlib/src/ArrayObject.php on line 426
+[30-Mar-2021 05:42:45 UTC] PHP Warning:  "continue" targeting switch is equivalent to "break". Did you mean to use "continue 2"? in /home/pdqhkzah/public_html/magenta/vendor/zendframework/zend-stdlib/src/ArrayObject.php on line 426
+[30-Mar-2021 05:56:33 UTC] PHP Warning:  "continue" targeting switch is equivalent to "break". Did you mean to use "continue 2"? in /home/pdqhkzah/public_html/magenta/vendor/zendframework/zend-stdlib/src/ArrayObject.php on line 426
+[06-Apr-2021 13:15:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getValue() on null in /home/pdqhkzah/public_html/magenta/vendor/magento/module-configurable-product/Model/Quote/Item/CartItemProcessor.php:86
+Stack trace:
+#0 /home/pdqhkzah/public_html/magenta/generated/code/Magento/ConfigurableProduct/Model/Quote/Item/CartItemProcessor/Proxy.php(103): Magento\ConfigurableProduct\Model\Quote\Item\CartItemProcessor->processOptions(Object(Magento\Quote\Model\Quote\Item\Interceptor))
+#1 /home/pdqhkzah/public_html/magenta/vendor/magento/module-quote/Model/Quote/Item/CartItemOptionsProcessor.php(84): Magento\ConfigurableProduct\Model\Quote\Item\CartItemProcessor\Proxy->processOptions(Object(Magento\Quote\Model\Quote\Item\Interceptor))
+#2 /home/pdqhkzah/public_html/magenta/vendor/magento/module-quote/Model/Quote/Item/CartItemPersister.php(108): Magento\Quote\Model\Quote\Item\CartItemOptionsProcessor->addProductOptions('configurable', Object(Magento\Quote\Model\Quote\Item\Interceptor))
+#3 /home/pdqhkzah/public_html/magenta/vendor/magento/mod in /home/pdqhkzah/public_html/magenta/vendor/magento/module-configurable-product/Model/Quote/Item/CartItemProcessor.php on line 86

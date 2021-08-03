@@ -1,0 +1,130 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+
+        <!--        <referenceContainer name="header.container">-->
+        <!--            <container name="header.panel.wrapper" htmlClass="panel wrapper " htmlTag="div" before="-">-->
+        <!--                <container name="header.panel" label="Page Header Panel" htmlTag="div" htmlClass="panel header">-->
+        <!--                    <block class="Magento\Framework\View\Element\Template" name="skip_to_content" template="Magento_Theme::html/skip.phtml">-->
+        <!--                        <arguments>-->
+        <!--                            <argument name="target" xsi:type="string">contentarea</argument>-->
+        <!--                            <argument name="label" translate="true" xsi:type="string">Skip to Content</argument>-->
+        <!--                        </arguments>-->
+        <!--                    </block>-->
+        <!--                    <block class="Magento\Store\Block\Switcher" name="store_language" as="store_language" template="Magento_Store::switch/languages.phtml"/>-->
+        <!--                    <block class="Magento\Customer\Block\Account\Navigation" name="top.links">-->
+        <!--                        <arguments>-->
+        <!--                            <argument name="css_class" xsi:type="string">header links</argument>-->
+        <!--                        </arguments>-->
+        <!--                    </block>-->
+        <!--                </container>-->
+        <!--            </container>-->
+        <!--            <container name="header-wrapper" label="Page Header" as="header-wrapper" htmlTag="div" htmlClass="header content">-->
+        <!--                <block class="Magento\Theme\Block\Html\Header\Logo" name="logo">-->
+        <!--                    <arguments>-->
+        <!--                        <argument name="logo_img_width" xsi:type="number">189</argument>-->
+        <!--                        <argument name="logo_img_height" xsi:type="number">64</argument>-->
+        <!--                    </arguments>-->
+        <!--                </block>-->
+        <!--            </container>-->
+        <!--        </referenceContainer>-->
+
+        <referenceContainer name="header.panel" htmlClass="panel header header-box">
+            <container name="header-phone" label="Header phone" as="header-phone" before="skip_to_content" htmlTag="div" htmlClass="header-phone">-->
+                <block class="Magento\Cms\Block\Block"  before="-"> <!--Where header.top.menu - block name (optional)-->
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">header-phone</argument> <!--Where header_menu - CMS block identifier, that you will create in the admin panel -->
+                    </arguments>
+                </block>
+            </container>
+        </referenceContainer>
+
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_file" xsi:type="string">images/cust-logo.svg</argument>
+                <argument name="logo_img_width" xsi:type="number">33</argument>
+                <argument name="logo_img_height" xsi:type="number">32</argument>
+            </arguments>
+        </referenceBlock>
+
+
+
+
+        <container name="custom-footer" htmlTag="footer" htmlClass="custom-footer" after="maincontent">
+            <container name="subs-wrap" htmlTag="div" htmlClass="subs-custom" >
+                <container name="subs-wrap-inset" htmlTag="div" htmlClass="footer content subs-custom__box" >
+                    <container htmlTag="div" htmlClass="subs-custom__box-desc" >
+                        <block class="Magento\Cms\Block\Block"  before="-">
+                            <arguments>
+                                <argument name="block_id" xsi:type="string">subs-desc-text</argument>
+                            </arguments>
+                        </block>
+                    </container>
+                </container>
+            </container>
+            <container name="box-footer-inset" htmlTag="div" htmlClass="custom-footer__content" >
+                <container name="box-footer" htmlTag="div" htmlClass="footer content custom-footer__content-grid" >
+                    <container htmlTag="div" htmlClass="custom-footer__content-item custom-footer__content-item--account">
+                        <block class="Magento\Cms\Block\Block" >
+                            <arguments>
+                                <argument name="block_id" xsi:type="string">footer-account</argument>
+                            </arguments>
+                        </block>
+                    </container>
+                    <container htmlTag="div" htmlClass="custom-footer__content-item custom-footer__content-item--serv">
+                        <block class="Magento\Cms\Block\Block" >
+                            <arguments>
+                                <argument name="block_id" xsi:type="string">footer-services</argument>
+                            </arguments>
+                        </block>
+                    </container>
+                    <container htmlTag="div" htmlClass="custom-footer__content-item custom-footer__content-item--resources">
+                        <block class="Magento\Cms\Block\Block" >
+                            <arguments>
+                                <argument name="block_id" xsi:type="string">footer-resources</argument>
+                            </arguments>
+                        </block>
+                    </container>
+                    <container htmlTag="div" htmlClass="custom-footer__content-item custom-footer__content-item--company">
+                        <block class="Magento\Cms\Block\Block" >
+                            <arguments>
+                                <argument name="block_id" xsi:type="string">footer-company</argument>
+                            </arguments>
+                        </block>
+                    </container>
+                    <container htmlTag="div" htmlClass="custom-footer__content-item custom-footer__content-item--contact">
+                        <block class="Magento\Cms\Block\Block" >
+                            <arguments>
+                                <argument name="block_id" xsi:type="string">footer-contact-us</argument>
+                            </arguments>
+                        </block>
+                    </container>
+                    <container htmlTag="div" htmlClass="custom-footer__content-item custom-footer__content-item--payments">
+                        <block class="Magento\Cms\Block\Block" >
+                            <arguments>
+                                <argument name="block_id" xsi:type="string">footer-peyments</argument>
+                            </arguments>
+                        </block>
+                    </container>
+                    <container htmlTag="div" htmlClass="custom-footer__content-item custom-footer__content-item--garanty">
+                        <block class="Magento\Cms\Block\Block" >
+                            <arguments>
+                                <argument name="block_id" xsi:type="string">footer-garanty</argument>
+                            </arguments>
+                        </block>
+                    </container>
+                </container>
+            </container>
+        </container>
+
+
+<!--        <referenceContainer name="page.top" remove="true" />-->
+
+        <referenceContainer name="footer" remove="true" />
+        <!--        <referenceBlock name="form.subscribe" remove="true" />-->
+
+
+        <move element="form.subscribe" destination="subs-wrap-inset"  after="-" />
+        <move element="copyright" destination="custom-footer" as="new_alias" after="box-footer" />
+
+    </body>
+</page>

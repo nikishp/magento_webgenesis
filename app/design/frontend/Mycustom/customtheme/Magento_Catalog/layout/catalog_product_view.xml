@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="product.info.main">
+            <container name="custom-prod-title" label="prod title" as="prod-title" before="-" htmlTag="div" htmlClass="c-prod-title">
+                <block class="Magento\Cms\Block\Block"  before="-"> <!--Where header.top.menu - block name (optional)-->
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">cb-product-page</argument> <!--Where header_menu - CMS block identifier, that you will create in the admin panel -->
+                    </arguments>
+                </block>
+                <block class="Magento\Theme\Block\Html\Title" name="page.main.title.product" template="Magento_Theme::html/title.phtml"/>
+            </container>
+        </referenceContainer>
+        <referenceBlock name="page.main.title" remove="true"/>
+    </body>
+</page>
